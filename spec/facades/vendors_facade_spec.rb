@@ -8,5 +8,14 @@ RSpec.describe VendorsFacade, :vcr do
     expect(vendors).to all be_a(Vendor)
     expect(vendors.count).to eq(5)
     expect(facade.vendors_for("322482")).to eq(vendors)
+
+    vendors.each do |vendor|
+      expect(vendor.id).to be_a(String)
+      expect(vendor.name).to be_a(String)
+      expect(vendor.description).to be_a(String)
+      expect(vendor.contact_name).to be_a(String)
+      expect(vendor.contact_phone).to be_a(String)
+      expect(vendor.credit_accepted).to eq(true).or eq(false)
+    end
   end
 end
