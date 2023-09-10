@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe MarketMoneyService do
+RSpec.describe MarketMoneyService, :vcr do
   it "connects to Market Money API" do
     service = MarketMoneyService.new
     expect(service.connection).to be_a(Faraday::Connection)
