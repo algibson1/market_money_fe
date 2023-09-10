@@ -10,7 +10,7 @@ class Market
     @id = data[:id]
     @name = data[:attributes][:name]
     @street = data[:attributes][:street] || "Unknown Street"
-    @city = data[:attributes][:city] || "Unknown City"
+    @city = data[:attributes][:city]&.squeeze(" ") || "Unknown City"
     @state = data[:attributes][:state] || "Unknown State"
     @zip = data[:attributes][:zip] || "Unknown Zip"
   end
