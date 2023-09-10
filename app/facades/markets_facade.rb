@@ -9,8 +9,6 @@ class MarketsFacade
 
   def find_market(id)
     @markets_by_id[id] ||= Market.new(parse(get_market(id)))
-    # better to use all_markets.find { |market| market.id == id } ?
-    # Remove find_market method from service?
   end
 
   private
