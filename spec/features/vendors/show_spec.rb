@@ -22,7 +22,6 @@ RSpec.describe "Vendor show page", :vcr do
 
   it "has the vendor's name" do
     expect(page).to have_content("Honeycomb")
-    save_and_open_page
   end
 
   it "has the contact info" do
