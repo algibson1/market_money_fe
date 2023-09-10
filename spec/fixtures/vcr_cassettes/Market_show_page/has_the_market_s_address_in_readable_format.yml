@@ -1,0 +1,107 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/328584
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"fd9e608bf2bdde11b872ffc0832f7436"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - bc037746-b2da-4714-8ec5-f0472501d6b7
+      X-Runtime:
+      - '0.062002'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=10.63,
+        instantiation.active_record;dur=0.03, process_action.action_controller;dur=55.79
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"328584","type":"market","attributes":{"name":"Poynette
+        Area Farmers Market","street":"South Main Street","city":"Poynette","county":"Columbia","state":"Wisconsin","zip":"53955","lat":"43.389924","lon":"-89.403090","vendor_count":6}}}'
+  recorded_at: Sun, 10 Sep 2023 15:32:05 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/328584
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"fd9e608bf2bdde11b872ffc0832f7436"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 00fd2999-03ea-4da9-b8c1-dd37f54d5e7a
+      X-Runtime:
+      - '0.013061'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.05, sql.active_record;dur=1.41, instantiation.active_record;dur=0.02,
+        process_action.action_controller;dur=7.77
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"328584","type":"market","attributes":{"name":"Poynette
+        Area Farmers Market","street":"South Main Street","city":"Poynette","county":"Columbia","state":"Wisconsin","zip":"53955","lat":"43.389924","lon":"-89.403090","vendor_count":6}}}'
+  recorded_at: Sun, 10 Sep 2023 15:32:05 GMT
+recorded_with: VCR 6.2.0
