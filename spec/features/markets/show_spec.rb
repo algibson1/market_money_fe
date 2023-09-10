@@ -3,7 +3,7 @@ require "rails_helper"
 RSpec.describe "Market show page", :vcr do
   before(:each) do
     @market = MarketsFacade.new.find_market("328584")
-    visit market_path(market.id)
+    visit market_path(@market.id)
   end
 
   it "has the market's name" do
