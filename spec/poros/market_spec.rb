@@ -48,4 +48,11 @@ RSpec.describe Market do
       expect(market.state).to eq("Unknown State")
       expect(market.zip).to eq("Unknown Zip")
   end
+
+  it "has vendors", :vcr do
+    market = MarketFacade.new.find_market("322482")
+    vendors = market.vendors
+    expect(vendors).to be_an(Array)
+    expect(vendors).to all be_a(Vendor)
+  end
 end
