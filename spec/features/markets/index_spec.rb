@@ -22,7 +22,7 @@ RSpec.describe "Markets Index Page", :vcr do
     end
   end
 
-  xit "links to each market's show page" do
+  it "links to each market's show page" do
     market = @markets.sample 
 
     within("#market-#{market.id}") do
