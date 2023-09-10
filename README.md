@@ -1,24 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project accompanies the [Market Money Project](https://github.com/algibson1/market_money). 
 
-Things you may want to cover:
+The original Market Money Project builds various API endpoints to return information about markets and vendors.
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This short project then consumes that API and produces a front-end application to format and display that data. 
+[Project Requirements](https://github.com/turingschool-examples/market_money_fe)
