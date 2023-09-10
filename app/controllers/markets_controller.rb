@@ -3,6 +3,10 @@ class MarketsController < ApplicationController
     @markets = facade.all_markets
   end
 
+  def show
+    @market = facade.find_market(params[:id])
+  end
+
   private
 
   def facade 
