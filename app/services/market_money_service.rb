@@ -14,4 +14,8 @@ class MarketMoneyService
   def vendors_for(id)
     connection.get("markets/#{id}/vendors")
   end
+
+  def find_vendor(id)
+    connection.get("vendors/#{id}")
+  end
 end
