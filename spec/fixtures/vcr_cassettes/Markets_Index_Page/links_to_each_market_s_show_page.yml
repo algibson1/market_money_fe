@@ -263,4 +263,150 @@ http_interactions:
         Park Farmers Market","street":"Union Blvd. \u0026 Pikes Peak Ave.","city":"Colorado
         Springs","county":null,"state":"Colorado","zip":null,"lat":"38.833","lon":"-104.795","vendor_count":8}}}'
   recorded_at: Sun, 10 Sep 2023 14:55:21 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/328859
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"5244e0122f9eab50eec657949263792f"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 64e708aa-2b26-4ccd-84f2-af0062860ed8
+      X-Runtime:
+      - '0.053034'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.09, sql.active_record;dur=14.41,
+        instantiation.active_record;dur=0.96, process_action.action_controller;dur=40.71
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":{"id":"328859","type":"market","attributes":{"name":"Rochester
+        Farmers Market","street":"Rochester Center, Route 105, Plumb Corner Market
+        Parking Lot","city":"Rochester","county":"Plymouth","state":"Massachusetts","zip":"02770","lat":"41.7326","lon":"-70.8226","vendor_count":19}}}'
+  recorded_at: Sun, 10 Sep 2023 18:09:40 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/328859/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"da504d8ca018e5c63ce26756588245d1"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - 5d42f1f7-40fe-4090-b41c-8b762a0b6f98
+      X-Runtime:
+      - '0.072851'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.28, sql.active_record;dur=45.72,
+        instantiation.active_record;dur=0.72, process_action.action_controller;dur=58.43
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55447","type":"vendor","attributes":{"name":"Jolly
+        Jars","description":"Jars full of jolly, sweet treats","contact_name":"Merrill
+        Gottlieb","contact_phone":"(289) 774-2279","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55010","type":"vendor","attributes":{"name":"Spicy
+        Affair","description":"Hot sauces and spice blends","contact_name":"Kristle
+        Douglas","contact_phone":"514.093.4876","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55758","type":"vendor","attributes":{"name":"Chamomile
+        Comfort","description":"Handmade soaps and lotions made with chamomile-infused
+        oils.","contact_name":"Dorthy Ryan","contact_phone":"1-603-423-7162","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55279","type":"vendor","attributes":{"name":"Colorado
+        Carrots","description":"Fresh, sweet carrots grown in Colorado soil.","contact_name":"Evan
+        McKenzie","contact_phone":"(445) 251-2601","credit_accepted":false,"states_sold_in":["Massachusetts"]}},{"id":"54854","type":"vendor","attributes":{"name":"Microgreens
+        Grower","description":"This vendor sells a variety of fresh microgreens, which
+        are young, tender plants that are packed with nutrients. They may offer a
+        variety of flavors, from spicy to sweet.","contact_name":"Walter Pfeffer Esq.","contact_phone":"132.198.1080","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"56190","type":"vendor","attributes":{"name":"The
+        Quilted Owl","description":"Handmade quilts and quilted home decor.","contact_name":"Ericka
+        Goyette","contact_phone":"307.063.0336","credit_accepted":false,"states_sold_in":["Massachusetts"]}},{"id":"55605","type":"vendor","attributes":{"name":"Canine
+        Creations","description":"Handmade dog collars and leashes","contact_name":"Keli
+        Wintheiser","contact_phone":"(594) 561-7460","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55022","type":"vendor","attributes":{"name":"The
+        Cherry on Top","description":"Fresh cherries and cherry-based products","contact_name":"Keren
+        Terry","contact_phone":"675-681-0139","credit_accepted":false,"states_sold_in":["Massachusetts"]}},{"id":"55602","type":"vendor","attributes":{"name":"Pawsitively
+        Purrfect Plushies","description":"Soft and cuddly dog toys","contact_name":"Donnell
+        Hessel","contact_phone":"591.426.8950","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55926","type":"vendor","attributes":{"name":"Red
+        Barn Roasters","description":"Small-batch coffee roasted in-house using sustainable
+        farming practices.","contact_name":"Camellia Reinger Ret.","contact_phone":"167-903-9717","credit_accepted":false,"states_sold_in":["Massachusetts"]}},{"id":"56246","type":"vendor","attributes":{"name":"The
+        Beer Garden","description":"Craft beers on tap and in bottles and cans","contact_name":"Jamel
+        Ondricka MD","contact_phone":"1-742-812-7038","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55676","type":"vendor","attributes":{"name":"The
+        Smoothie Spot","description":"Fresh, fruity smoothies with unique flavor combinations.","contact_name":"Rev.
+        Isaias Monahan","contact_phone":"1-739-630-7236","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"56224","type":"vendor","attributes":{"name":"The
+        Brandy Bunch","description":"Distiller of grape and fruit brandies, with a
+        focus on barrel-aged varieties","contact_name":"Aurora Rippin","contact_phone":"272.732.9140","credit_accepted":false,"states_sold_in":["Massachusetts"]}},{"id":"56217","type":"vendor","attributes":{"name":"The
+        Scotch Cellar","description":"Scottish-style whiskey distillery, with a focus
+        on peated malts","contact_name":"Rosario Powlowski","contact_phone":"(513)
+        162-5678","credit_accepted":false,"states_sold_in":["Massachusetts"]}},{"id":"54910","type":"vendor","attributes":{"name":"The
+        Fermented Food Co.","description":"This vendor offers a variety of fermented
+        foods, including sauerkraut, kimchi, and kombucha, as well as fermentation
+        kits and other related products.","contact_name":"Chang Dietrich","contact_phone":"247.774.8485","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55040","type":"vendor","attributes":{"name":"Sprinkle
+        of Sunshine","description":"Freshly squeezed citrus juices and citrus-based
+        products","contact_name":"Taylor Moore","contact_phone":"151.795.4395","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55505","type":"vendor","attributes":{"name":"Terra
+        Textiles","description":"Sells clothing made from sustainable and organic
+        materials such as hemp and linen.","contact_name":"Aretha Pfannerstill","contact_phone":"(348)
+        228-9582","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"55160","type":"vendor","attributes":{"name":"Olive
+        You So Much!","description":"sells a variety of olives and olive-based products","contact_name":"Mrs.
+        Ji Schneider","contact_phone":"423-079-8963","credit_accepted":true,"states_sold_in":["Massachusetts"]}},{"id":"56500","type":"vendor","attributes":{"name":"Sea
+        Glass Sensations","description":"Sea glass art pieces and jewelry","contact_name":"Alphonso
+        O''Hara","contact_phone":"1-637-363-6027","credit_accepted":false,"states_sold_in":["Massachusetts"]}}]}'
+  recorded_at: Sun, 10 Sep 2023 18:09:40 GMT
 recorded_with: VCR 6.2.0
