@@ -55,8 +55,9 @@ group :development, :test do
   gem "capybara"
   gem "launchy"
   gem "rspec-rails"
-  gem "shoulda-matchers"
   gem "pry"
+  gem "vcr"
+  gem "webmock"
 end
 
 group :development do
