@@ -18,4 +18,18 @@ RSpec.describe VendorsFacade, :vcr do
       expect(vendor.credit_accepted).to eq(true).or eq(false)
     end
   end
+
+  it "returns one vendor by id" do
+    facade = VendorsFacade.new
+    vendor = facade.find_vendor("55747")
+    expect(vendor).to be_a(Vendor)
+    expect(facade.find_vendor("55747")).to eq(vendor)
+
+    expect(vendor.id).to be_a(String)
+    expect(vendor.name).to be_a(String)
+    expect(vendor.description).to be_a(String)
+    expect(vendor.contact_name).to be_a(String)
+    expect(vendor.contact_phone).to be_a(String)
+    expect(vendor.credit_accepted).to eq(true).or eq(false)
+  end
 end
