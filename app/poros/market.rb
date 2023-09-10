@@ -14,4 +14,8 @@ class Market
     @state = data[:attributes][:state] || "Unknown State"
     @zip = data[:attributes][:zip] || "Unknown Zip"
   end
+
+  def vendors
+    @vendors ||= VendorsFacade.new.vendors_for(@id)
+  end
 end
