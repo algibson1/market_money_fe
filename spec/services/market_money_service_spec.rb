@@ -52,4 +52,18 @@ RSpec.describe MarketMoneyService, :vcr do
       expect(vendor_hash[:attributes]).to have_key(:credit_accepted)
     end
   end
+
+  it "returns one vendor" do
+    service = MarketMoneyService.new
+    response = service.find_vendor("55747")
+    vendor_hash = JSON.parse(response.body, symbolize_names: true)[:data]
+
+    expect(vendor_hash).to have_key(:id)
+    expect(vendor_hash).to have_key(:attributes)
+    expect(vendor_hash[:attributes]).to have_key(:name)
+    expect(vendor_hash[:attributes]).to have_key(:description)
+    expect(vendor_hash[:attributes]).to have_key(:contact_name)
+    expect(vendor_hash[:attributes]).to have_key(:contact_phone)
+    expect(vendor_hash[:attributes]).to have_key(:credit_accepted)
+  end
 end
