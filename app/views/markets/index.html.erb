@@ -20,7 +20,7 @@
 
         <td><%= market.state %></td>
 
-        <td><%= button_to "More Info", url: market_path(market) %></td>
+        <td><%= button_to "More Info", market_path(market.id), method: :get %></td>
 
       </tr>
     </div>
