@@ -1,6 +1,6 @@
 require "rails_helper"
 
-RSpec.describe MarketsFacade do
+RSpec.describe MarketsFacade, :vcr do
   it "can return all markets" do
     markets = MarketsFacade.new.all_markets
 
