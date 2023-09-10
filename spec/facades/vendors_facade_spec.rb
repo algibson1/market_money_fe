@@ -7,5 +7,6 @@ RSpec.describe VendorsFacade, :vcr do
     expect(vendors).to be_an(Array)
     expect(vendors).to all be_a(Vendor)
     expect(vendors.count).to eq(5)
+    expect(facade.vendors_for("322482")).to eq(vendors)
   end
 end
