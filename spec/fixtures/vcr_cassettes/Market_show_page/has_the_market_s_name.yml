@@ -104,4 +104,67 @@ http_interactions:
       string: '{"data":{"id":"328584","type":"market","attributes":{"name":"Poynette
         Area Farmers Market","street":"South Main Street","city":"Poynette","county":"Columbia","state":"Wisconsin","zip":"53955","lat":"43.389924","lon":"-89.403090","vendor_count":6}}}'
   recorded_at: Sun, 10 Sep 2023 15:32:05 GMT
+- request:
+    method: get
+    uri: http://localhost:3000/api/v0/markets/328584/vendors
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.10
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - '0'
+      X-Content-Type-Options:
+      - nosniff
+      X-Download-Options:
+      - noopen
+      X-Permitted-Cross-Domain-Policies:
+      - none
+      Referrer-Policy:
+      - strict-origin-when-cross-origin
+      Content-Type:
+      - application/json; charset=utf-8
+      Vary:
+      - Accept
+      Etag:
+      - W/"5429084bcefe38c4bb9e0319993ddcac"
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      X-Request-Id:
+      - f1a0d8db-4c07-476b-b798-1f420efe3fce
+      X-Runtime:
+      - '0.040009'
+      Server-Timing:
+      - start_processing.action_controller;dur=0.30, sql.active_record;dur=12.50,
+        instantiation.active_record;dur=0.23, process_action.action_controller;dur=20.06
+      Transfer-Encoding:
+      - chunked
+    body:
+      encoding: UTF-8
+      string: '{"data":[{"id":"55747","type":"vendor","attributes":{"name":"Honeycomb","description":"All-natural,
+        honey-based skincare products.","contact_name":"Vicente Collier","contact_phone":"391-350-1645","credit_accepted":true,"states_sold_in":["Wisconsin"]}},{"id":"56344","type":"vendor","attributes":{"name":"Homestead
+        Harvest","description":"Canned goods made with homegrown produce.","contact_name":"Freddy
+        Boyer","contact_phone":"1-164-768-9493","credit_accepted":true,"states_sold_in":["Wisconsin"]}},{"id":"55630","type":"vendor","attributes":{"name":"Symbiotic
+        Sips","description":"Kombucha with the perfect balance of sweet and tart.","contact_name":"Chadwick
+        Orn VM","contact_phone":"303-455-8516","credit_accepted":true,"states_sold_in":["Wisconsin"]}},{"id":"55026","type":"vendor","attributes":{"name":"Arti-Chokes
+        R Us","description":"Fresh artichokes and dips","contact_name":"Merle Gottlieb
+        II","contact_phone":"1-342-388-4267","credit_accepted":true,"states_sold_in":["Wisconsin"]}},{"id":"56377","type":"vendor","attributes":{"name":"Tribal
+        Art Treasures","description":"Sells authentic tribal art pieces from around
+        the world, including masks, sculptures, and paintings.","contact_name":"Elna
+        Waters DC","contact_phone":"973-508-9340","credit_accepted":true,"states_sold_in":["Wisconsin"]}},{"id":"56324","type":"vendor","attributes":{"name":"Happy
+        Snacks","description":"Snacks that will put a smile on your face and satisfy
+        your hunger.","contact_name":"Ms. Louanne Schoen","contact_phone":"1-714-861-2936","credit_accepted":false,"states_sold_in":["Wisconsin"]}}]}'
+  recorded_at: Sun, 10 Sep 2023 16:42:48 GMT
 recorded_with: VCR 6.2.0
